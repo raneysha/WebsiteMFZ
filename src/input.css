@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navlink {
+  @apply relative bg-transparent py-1 px-2 mx-4 font-extrabold transition-all before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-[#37b0ac] before:bg-opacity-20 before:transition-all before:duration-500 before:content-[''] before:hover:scale-x-100 before:hover:bg-opacity-100;
+}
+
+@media (max-width: 767.98px) {
+  .navlink{
+    display: none;
+  }
+}
+
+.hamburger-line {
+  @apply w-[35px] h-[5px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply origin-bottom-left -rotate-45;
+}
