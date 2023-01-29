@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily:{
         Mallanna: ['"Mallanna"'],
-        Steelfish: ['"Steelfish"']
+        "Steelfish": ['"Steelfish"']
       }
     },
   },
