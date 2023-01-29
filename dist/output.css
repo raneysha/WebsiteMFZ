@@ -422,7 +422,7 @@ video {
 @font-face {
   font-family: "Steelfish", 'sans-serif';
 
-  src: url('./dist/fonts/steelfish.ttf');
+  src: url('./dist/fonts/steelfish.ttf') format('truetype'),url('./dist/fonts/steelfish.woff') format('woff');
 }
 
 @font-face {
@@ -434,7 +434,8 @@ video {
 @font-face {
   font-family: "Steelfish Outline", 'sans-serif';
 
-  src: url('./dist/fonts/steelfish\ outline.ttf');
+  src: url('./dist/fonts/steelfish\ outline.ttf'),
+    url('./dist/fonts/steelfish\ outline.woff') format('woff');
 }
 
 *, ::before, ::after {
@@ -632,6 +633,10 @@ video {
   margin-top: 1rem;
 }
 
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+
 .ml-32 {
   margin-left: 8rem;
 }
@@ -648,10 +653,6 @@ video {
   margin-left: 7rem;
 }
 
-.-ml-6 {
-  margin-left: -1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -664,20 +665,12 @@ video {
   display: flex;
 }
 
-.inline-flex {
-  display: inline-flex;
-}
-
 .hidden {
   display: none;
 }
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-3 {
-  height: 0.75rem;
 }
 
 .w-full {
@@ -688,28 +681,12 @@ video {
   width: 11rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-12 {
   width: 3rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-full {
@@ -799,10 +776,6 @@ video {
   font-family: "Steelfish Outline";
 }
 
-.font-Mallanna {
-  font-family: "Mallanna";
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -813,19 +786,14 @@ video {
   line-height: 1;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-semibold {
@@ -838,10 +806,6 @@ video {
 
 .tracking-tighter {
   letter-spacing: -0.05em;
-}
-
-.-tracking-tighter {
-  letter-spacing: 0.05em;
 }
 
 .text-white {
@@ -859,11 +823,6 @@ video {
   color: rgb(252 44 44 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
@@ -877,10 +836,6 @@ video {
 .shadow-slate-700 {
   --tw-shadow-color: #334155;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.outline-4 {
-  outline-width: 4px;
 }
 
 .outline-red-600 {

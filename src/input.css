@@ -9,7 +9,7 @@
 @layer base{
   @font-face {
     font-family: "Steelfish", 'sans-serif';
-    src: url('./dist/fonts/steelfish.ttf');
+    src: url('./dist/fonts/steelfish.ttf') format('truetype'),url('./dist/fonts/steelfish.woff') format('woff');
   }
   @font-face {
     font-family: "Steelfish", 'sans-serif';
@@ -17,6 +17,7 @@
   }
   @font-face {
     font-family: "Steelfish Outline", 'sans-serif';
-    src: url('./dist/fonts/steelfish\ outline.ttf');
+    src: url('./dist/fonts/steelfish\ outline.ttf'),
+    url('./dist/fonts/steelfish\ outline.woff') format('woff');
   }
 }
