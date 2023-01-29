@@ -419,6 +419,26 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Steelfish", 'sans-serif';
+
+  src: url('./dist/fonts/steelfish.ttf'),
+    url('./dist/fonts/steelfish.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Steelfish", 'sans-serif';
+
+  src: url('./dist/fonts/steelfish\ bd.ttf');
+}
+
+@font-face {
+  font-family: "Steelfish Outline", 'sans-serif';
+
+  src: url('./dist/fonts/steelfish\ outline.ttf'),
+    url('./dist/fonts/steelfish\ outline.woff') format('woff');
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -871,22 +891,6 @@ video {
   --tw-bg-opacity: 1;
 }
 
-/* @layer base{
-  @font-face {
-    font-family: "Steelfish", 'sans-serif';
-    src: url('./dist/fonts/steelfish.ttf') format('truetype'),url('./dist/fonts/steelfish.woff') format('woff');
-  }
-  @font-face {
-    font-family: "Steelfish", 'sans-serif';
-    src: url('./dist/fonts/steelfish\ bd.ttf');
-  }
-  @font-face {
-    font-family: "Steelfish Outline", 'sans-serif';
-    src: url('./dist/fonts/steelfish\ outline.ttf'),
-    url('./dist/fonts/steelfish\ outline.woff') format('woff');
-  }
-} */
-
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -948,4 +952,4 @@ video {
   .lg\:text-\[192px\] {
     font-size: 192px;
   }
-}
+} 
